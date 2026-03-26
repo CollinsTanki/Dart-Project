@@ -10,9 +10,27 @@ class HomePage extends StatelessWidget {
         title: const Text('Flutter Mapp'),
         backgroundColor: Colors.blue,
       ),
-      body: const Center(
-        child: Text('Welcome to the Flutter App'),
+      body: Column(
+        children: [
+          Card(
+            child: Container(
+              padding: EdgeInsets.all(8.0),
+              width: double.infinity,
+              child: Image.asset('images/rocket.jpg'),
+            ),
+          ),
+          Row(
+            children: [
+              Card(
+                child: Container(
+                  padding: EdgeInsets.all(8.0),                 
+                  child: Image.asset('images/space.jpg'),
+                ),
+              ),
+            ],
+          ),
+        ],
       ),
-    ); 
+    );
   }
 }
